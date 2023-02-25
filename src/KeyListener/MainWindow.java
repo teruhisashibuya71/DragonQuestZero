@@ -12,7 +12,7 @@ public class MainWindow extends JFrame {
     private static final long serialVersionUID = 1L;
 
     //以下 フィールド
-    ScreenMode screenMode = ScreenMode.MAIN;
+    ScreenMode screenMode = ScreenMode.FIELD;
 
     //定数 とりあえず正方形で
     final int WIDTH = 800;
@@ -26,7 +26,7 @@ public class MainWindow extends JFrame {
 
     //コンストラクタ mainメソッドの最初で呼ばれる処理
     MainWindow(){
-        this.setTitle("キーボード入力の練習");
+        this.setTitle("フィールド画面テスト");
         ImageIcon icon = new ImageIcon(getClass().getResource("../img/hero.png"));
         this.setIconImage(icon.getImage());
         
@@ -59,7 +59,7 @@ public class MainWindow extends JFrame {
         screenMode = s;
         //引数によって画面の表示を切り替える
         switch (screenMode) {
-        case MAIN:
+        case FIELD:
             layout.show(this.getContentPane(),"メイン画面");
             mainPanel.requestFocus();
             break;

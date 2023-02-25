@@ -2,7 +2,6 @@ package KeyListener;
 import java.awt.event.KeyEvent;
 import java.awt.event.KeyListener;
 
-import javax.swing.JLabel;
 import javax.swing.JPanel;
 import java.awt.Color;
 
@@ -71,25 +70,25 @@ public class MainPanel extends JPanel{
 
             case KeyEvent.VK_UP: //上を押した時の処理
                 if (heroLabel.getY() > 0) {
-                    heroLabel.setLocation(heroLabel.getX(), heroLabel.getY()-20);
+                    heroLabel.setLocation(heroLabel.getX(), heroLabel.getY()-36);
                 }
                 break;
 
             case KeyEvent.VK_DOWN: //下を押した時の処理
                 if (heroLabel.getY() + heroLabel.heroImage.getHeight(null) < panel.getHeight()) {
-                    heroLabel.setLocation(heroLabel.getX(), heroLabel.getY()+20);
+                    heroLabel.setLocation(heroLabel.getX(), heroLabel.getY()+36);
                 }
                 break;
 
             case KeyEvent.VK_LEFT: //左を押した時の処理
                 if (heroLabel.getX() > 0) {
-                    heroLabel.setLocation(heroLabel.getX()-20, heroLabel.getY());
+                    heroLabel.setLocation(heroLabel.getX()-36, heroLabel.getY());
                 }
                 break;
             
             case KeyEvent.VK_RIGHT: //右を押した時の処理
                 if (heroLabel.getX() + heroLabel.heroImage.getWidth(null) < panel.getWidth()) {
-                    heroLabel.setLocation(heroLabel.getX()+20, heroLabel.getY());
+                    heroLabel.setLocation(heroLabel.getX()+36, heroLabel.getY());
                 }
                 break;
             case KeyEvent.VK_ENTER: //ENTERの処理

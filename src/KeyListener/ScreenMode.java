@@ -2,5 +2,5 @@ package KeyListener;
 
 public enum ScreenMode {
     //画面モードはメインだけ
-    MAIN,
+    FIELD,
 }
